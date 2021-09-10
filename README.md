@@ -1,5 +1,28 @@
 # ⛺️ Tent: Fully Test-Time Adaptation by Entropy Minimization
 
+### *** This is a fork to test on the ImageNet-C dataset. 
+
+Dataset with the corruptions applied is downloaded on first run from [this](https://zenodo.org/record/2235448/files) site and will be placed on `data/imagenet2012/val_c/`.
+
+To run the different configurations:
+
+```
+# Use default ResNet50
+$ python imagenetc.py --cfg cfgs/source_imagenetc.yaml
+$ python imagenetc.py --cfg cfgs/norm_imagenetc.yaml
+$ python imagenetc.py --cfg cfgs/tent_imagenetc.yaml
+
+# Normalize input for default ResNet50
+$ python imagenetc.py --cfg cfgs/source_imagenetc_normalize.yaml
+$ python imagenetc.py --cfg cfgs/norm_imagenetc_normalize.yaml
+$ python imagenetc.py --cfg cfgs/tent_imagenetc_normlize.yaml
+
+```
+
+### *** Original contents follow.***
+
+---
+
 This is the official project repository for [Tent: Fully-Test Time Adaptation by Entropy Minimization](https://openreview.net/forum?id=uXl3bZLkr3c) by
 Dequan Wang\*, Evan Shelhamer\*, Shaoteng Liu, Bruno Olshausen, and Trevor Darrell (ICLR 2021, spotlight).
 

@@ -38,6 +38,9 @@ _C.MODEL.ADAPTATION = 'source'
 # To make adaptation episodic, and reset the model for each batch, choose True.
 _C.MODEL.EPISODIC = False
 
+# FIXME
+_C.MODEL.NORMALIZE = False
+
 # ----------------------------- Corruption options -------------------------- #
 _C.CORRUPTION = CfgNode()
 

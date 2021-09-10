@@ -1,0 +1,31 @@
+MODEL:
+  ADAPTATION: source
+  ARCH: Standard
+  NORMALIZE: False
+TEST:
+  BATCH_SIZE: 1000 # 200
+CORRUPTION:
+  NUM_EX: 49984 # ImageNet 2012 validation
+  DATASET: imagenet
+  SEVERITY:
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
