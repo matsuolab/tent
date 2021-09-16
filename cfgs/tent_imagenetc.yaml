@@ -3,7 +3,7 @@ MODEL:
   ARCH: Standard
   NORMALIZE: False
 TEST:
-  BATCH_SIZE: 100 # 200
+  BATCH_SIZE: 200
 CORRUPTION:
   NUM_EX: 49984 # ImageNet 2012 validation
   DATASET: imagenet
